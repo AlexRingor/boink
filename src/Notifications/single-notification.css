@@ -1,0 +1,53 @@
+.singleNotification__wrapper {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    padding: 12px;
+box-sizing: border-box;
+}
+
+.singleNotification__wrapper h1 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.singleNotification__wrapper p {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.singleNotification__wrapper-icon, .singleNotification__wrapper-close {
+    width: 10%;
+    padding-top: 10px;
+}
+
+.singleNotification__wrapper-close {
+    padding-top: 24px;
+}
+
+
+.singleNotification__wrapper-content {
+    width: 80%;
+}
+
+.singleNotification__wrapper:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.singleNotification__wrapper:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.singleNotification__wrapper:only-child {
+    border-radius: 8px;
+}
+
+.close-notif {
+    cursor: pointer;
+}

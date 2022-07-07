@@ -1,0 +1,43 @@
+.recommended__wrapper {
+    width: 50%;
+    max-width: 455px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0 16px;
+   
+}
+
+.recommended__wrapper-head h1 {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 400;
+   
+}
+
+.recommended__wrapper-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 16px 0;
+}
+
+.recommended__wrapper-head a {
+    font-size: 1rem;
+    color: #43bfb7;
+    text-decoration: none;
+}
+
+.recommended__wrapper-body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 815px) {
+    .recommended__wrapper-body {
+        justify-content: center;
+    }
+    
+}
