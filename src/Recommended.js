@@ -50,7 +50,7 @@ export default function Recommended() {
     console.log(data[0].isFav)
     const newData = data.map((product, index) => {
       if (index == id) {
-        // product.isFav = !product.isFav
+        product.isFav = !product.isFav
         // console.log(product)
       }
       return product
