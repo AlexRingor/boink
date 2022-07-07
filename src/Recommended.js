@@ -60,7 +60,7 @@ export default function Recommended() {
 
   return (
     <>
-    <Item product={data}/>
+    {data.length ? <Item product={data}/> : null}
     <div className="recommended__wrapper">
       <div className="recommended__wrapper-head">
         <h1>Recommended for you</h1>
