@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useCallback, useState } from "react";
 import Product from './Recommended/Product'
+import Item from './Item'
+
 import './recommended.css'
 
 const productsURL = "https://sw-coding-challenge.herokuapp.com/api/v1/products"
@@ -27,13 +29,13 @@ export default function Recommended() {
       // add 'isFav' property before setting data
       for (var i = 0; i < result.data.d.length; i++) {
         result.data.d[i].isFav = false;
-        console.log(result.data.d[i])
+        // console.log(result.data.d[i])
       }
       // limiting product listed to 2
       setData(result.data.d.splice(0, 2).map((product) => {
         return product
       }))
-      console.log(result.data.d)
+      // console.log(result.data.d)
     } catch (error) {
       setResponseError(error.message);
     }
@@ -48,8 +50,8 @@ export default function Recommended() {
     console.log(data[0].isFav)
     const newData = data.map((product, index) => {
       if (index == id) {
-        product.isFav = !product.isFav
-        console.log(product)
+        // product.isFav = !product.isFav
+        // console.log(product)
       }
       return product
     })
@@ -57,13 +59,14 @@ export default function Recommended() {
   }
 
   return (
+    <>
+    <Item product={data}/>
     <div className="recommended__wrapper">
       <div className="recommended__wrapper-head">
         <h1>Recommended for you</h1>
         <a href="sw.com" target="_blank">See more</a>
       </div>
       <div className="recommended__wrapper-body">
-        {/* splice data to limit product listed. update splice to show more product. */}
       {data.map((product, index) => (
             <Product 
                 key={index} 
@@ -78,5 +81,6 @@ export default function Recommended() {
         ))}
       </div>
     </div>
+    </>
   );
 }

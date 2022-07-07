@@ -27,7 +27,7 @@ export default function Notification() {
         for (var i = 0; i < result.data.d.length; i++) {
             result.data.d[i].id = i;
             result.data.d[i].orderType = Math.floor(Math.random() * 3);;
-            console.log(result.data.d[i])
+            // console.log(result.data.d[i])
         }
         // console.log(result.data.d)
         // limiting notification listed to 5
