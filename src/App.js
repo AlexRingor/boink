@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 // import Recommended from './Recommended'
 // import Notifications from './Notifications'
 import React, {Suspense} from 'react'

@@ -12,6 +12,13 @@
     align-items: baseline;
 }
 
+@media (max-width: 500px) {
+    .sizes__wrapper {
+        width: 80%;
+      }
+}
+
+
 .sizes__wrapper-title {
     text-align: left;
     font-weight: 600;
@@ -59,4 +66,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+}
+
+@media (max-width: 500px) {
+    .sizes__wrapper-options {
+        justify-content: inherit;
+    }
 }
