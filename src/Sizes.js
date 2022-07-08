@@ -1,7 +1,7 @@
 
 import {useState} from 'react'
 import Option from './Sizes/Option'
-import './sizes.css'
+import './styles/Sizes.css'
 
 export default function Sizes(product) {
     const [item, setItem] = useState(product.product[0])

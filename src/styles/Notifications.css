@@ -1,6 +1,10 @@
+.notifications__wrapper {
+    margin: 12px auto;
+}
+
 @media (max-width: 500px) {
     .notifications__wrapper {
         width: 80%;
-        margin: 0 auto;
+        margin: 12px auto;
     }
 }

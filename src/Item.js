@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import './item.css'
+import './styles/Item.css'
 
 export default function Item(prod) {
     // I'm only extracting 1 object from the array to demo

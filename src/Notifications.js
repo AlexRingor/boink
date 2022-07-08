@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useCallback, useState } from "react";
-import './recommended.css'
-import './notifications.css'
+import './styles/Recommended.css'
+import './styles/Notifications.css'
 import SingleNotification from './Notifications/SingleNotification'
 
 const notificationURL = "https://sw-coding-challenge.herokuapp.com/api/v1/notifications"
@@ -52,7 +52,7 @@ export default function Notification() {
 
     return (
         <div className="notifications__wrapper">
-            {notifications.length == 0 ? <h1>No notifications :-p</h1> : null}
+            {notifications.length === 0 ? <h1>No notifications :-p</h1> : null}
             {notifications.map((notif, index) => (
                 <SingleNotification 
                     key={index} 

@@ -1,4 +1,4 @@
-import './option.css'
+import './Option.css'
 import {useState} from 'react'
 
 export default function Option(size) {

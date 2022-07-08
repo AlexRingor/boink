@@ -1,4 +1,4 @@
-import './single-notification.css'
+import './Single-notification.css'
 
 export default function SingleNotification(notif) {
 
