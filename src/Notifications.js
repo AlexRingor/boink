@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useCallback, useState } from "react";
 import './recommended.css'
+import './notifications.css'
 import SingleNotification from './Notifications/SingleNotification'
 
 const notificationURL = "https://sw-coding-challenge.herokuapp.com/api/v1/notifications"
@@ -23,15 +24,15 @@ export default function Notification() {
     // fetch and set products
     try {
         const result = await axios.get(`${notificationURL}`);
-        // add add ID to each object for key mapping and random order number
+        // add an ID to each object for key mapping and random orderType for icon referencing.
         for (var i = 0; i < result.data.d.length; i++) {
             result.data.d[i].id = i;
             result.data.d[i].orderType = Math.floor(Math.random() * 3);;
             // console.log(result.data.d[i])
         }
         // console.log(result.data.d)
-        // limiting notification listed to 5
-        setNotifications(result.data.d.splice(0, 5).map((product) => {
+        // limiting notification listed to 10
+        setNotifications(result.data.d.splice(0, 10).map((product) => {
             return product
           }))
         // setNotifications(result.data.d)

@@ -49,7 +49,7 @@ export default function Recommended() {
   const toggleFav = (id) => {
     console.log(data[0].isFav)
     const newData = data.map((product, index) => {
-      if (index == id) {
+      if (index === id) {
         product.isFav = !product.isFav
         // console.log(product)
       }
@@ -67,18 +67,18 @@ export default function Recommended() {
         <a href="sw.com" target="_blank">See more</a>
       </div>
       <div className="recommended__wrapper-body">
-      {data.map((product, index) => (
-            <Product 
-                key={index} 
-                name={product.name}
-                id={index}
-                image={product.imageUrl} 
-                price={product.salePrice} 
-                desc={product.description} 
-                isFav={product.isFav}
-                toggleFav={toggleFav}
-            />
-        ))}
+        {data.map((product, index) => (
+              <Product 
+                  key={index} 
+                  name={product.name}
+                  id={index}
+                  image={product.imageUrl} 
+                  price={product.salePrice} 
+                  desc={product.description} 
+                  isFav={product.isFav}
+                  toggleFav={toggleFav}
+              />
+          ))}
       </div>
     </div>
     </>

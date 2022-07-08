@@ -1,11 +1,17 @@
 .recommended__wrapper {
-    width: 50%;
-    max-width: 455px;
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
     background-color: white;
     border-radius: 8px;
     padding: 0 16px;
-   
+    box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+    .recommended__wrapper {
+        width: 80%;
+    }
 }
 
 .recommended__wrapper-head h1 {

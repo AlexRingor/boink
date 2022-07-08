@@ -10,6 +10,17 @@
     justify-content: space-around;
 }
 
+@media (max-width: 500px) {
+    .item__wrapper {
+        width: 80%;
+        
+    }
+
+    .item__wrapper-description--title, .item__wrapper-description--controls, .item__wrapper-description--value {
+        padding: 0 10px;
+    }
+}
+
 .item__wrapper-thumbnail--image {
     position: relative;
 }
@@ -36,6 +47,14 @@
     max-width: 250px;
     width: 100%;
     align-items: baseline;
+}
+
+.item__wrapper-description--title {
+    text-align: left;
+}
+
+.item__wrapper-description--title span {
+    color: gray;
 }
 
 .item__wrapper-description--controls {

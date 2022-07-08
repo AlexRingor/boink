@@ -14,7 +14,7 @@ export default function Product(product) {
                 <img src={product.image}  alt={product.name}/>
             </div>
             <div className="product__wrapper-details">
-                <h1>{product.name} <span>{product.desc}</span></h1>
+                <h1>{product.name} <span>{product.desc.substring(0, 30)}</span></h1>
                 <div className='product__wrapper-pricing'>{product.price}</div>
             </div>
         </div>
