@@ -1,0 +1,32 @@
+.option__wrapper.is-available {
+    padding: 16px 24px;
+    border-radius: 12px;
+    border: 2px solid rgb(228, 228, 228);
+    margin: 4px;
+    cursor: pointer;
+    max-width: 60px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option__wrapper.not-available {
+    padding: 16px 24px;
+    border-radius: 12px;
+    border: 2px solid rgb(228, 228, 228);
+    pointer-events: none;  
+    margin: 4px;
+    cursor: not-allowed;
+    max-width: 60px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option__wrapper.is-available.selected {
+    border: 2px solid rgb(81, 81, 81);
+}

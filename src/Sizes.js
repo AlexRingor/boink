@@ -1,3 +1,4 @@
+
 import {useState} from 'react'
 import Option from './Sizes/Option'
 import './sizes.css'
@@ -8,19 +9,26 @@ export default function Sizes(product) {
     return (
         <div className="sizes__wrapper">
             <div className="sizes__wrapper-title">
-                <img src={item.imageUrl} alt={item.name}/>{item.name} <br/> <span>{item.description.substring(0, 30)}</span>
+                <div className="sizes__wrapper-title--container">
+                    <img src={item.imageUrl} alt={item.name}/>
+                    <div  className="sizes__wrapper-title--heading">{item.name}</div> 
+                </div>
+                <span>{item.description.substring(0, 30)}</span>
             </div>
             <div className="sizes__wrapper-price">
-                {item.salePrice} {item.originalPrice}
+                <span>{item.salePrice}</span> <strike>{item.originalPrice}</strike>
             </div>
             <div className="sizes__wrapper-options">
-                {item.sizes.map((size, index) => {
-                    <Option 
-                    />
-                })}
-                <div className="sizes__wrapper-options--spec">
-                
-                </div>
+                    {item.sizes.length ? (
+                        item.sizes.map((i, index) => (
+                            <Option 
+                                key={index}
+                                sizeLabel={i.label}
+                                isAvailable={i.isAvailable}
+                            />
+                        ))
+                    ) : null
+                    }
                 
             </div>
         </div>

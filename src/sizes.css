@@ -13,11 +13,50 @@
 }
 
 .sizes__wrapper-title {
-
+    text-align: left;
+    font-weight: 600;
 }
+
+.sizes__wrapper-title span{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sizes__wrapper-price {
+    margin: 16px 0;
+}
+
+.sizes__wrapper-price span {
+    font-size: 24px;
+}
+
+.sizes__wrapper-price strike {
+    color: gray;
+}
+
+.sizes__wrapper-title--heading {
+    display: inline;
+    font-size: 18px;
+}
+
+
+.sizes__wrapper-title--container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
 
 .sizes__wrapper-title img{
     width:30px;
     border-radius: 100px;
+    margin-right: 16px;
 
+}
+
+
+.sizes__wrapper-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
