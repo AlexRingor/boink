@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useCallback, useState } from "react";
 import Product from './Recommended/Product'
 import Item from './Item'
+import Sizes from './Sizes'
 
 import './recommended.css'
 
@@ -60,6 +61,7 @@ export default function Recommended() {
 
   return (
     <>
+    {data.length ? <Sizes product={data}/> : null}
     {data.length ? <Item product={data}/> : null}
     <div className="recommended__wrapper">
       <div className="recommended__wrapper-head">
