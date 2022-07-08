@@ -15,7 +15,7 @@
 .option__wrapper.not-available {
     padding: 16px 24px;
     border-radius: 12px;
-    border: 2px solid rgb(228, 228, 228);
+    border: 2px solid rgba(248, 244, 244, 0.709);
     pointer-events: none;  
     margin: 4px;
     cursor: not-allowed;
