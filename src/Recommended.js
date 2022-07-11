@@ -4,7 +4,7 @@ import Product from "./Recommended/Product";
 import Item from "./Item";
 import Sizes from "./Sizes";
 
-import "./styles/Recommended.css";
+import './styles/Recommended.css'
 
 const productsURL = "https://sw-coding-challenge.herokuapp.com/api/v1/products";
 const accessToken =

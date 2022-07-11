@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useCallback, useState } from "react";
 import './styles/Recommended.css'
 import './styles/Notifications.css'
 import SingleNotification from './Notifications/SingleNotification'
