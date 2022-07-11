@@ -12,7 +12,7 @@ export default function Item(prod) {
     const [originalBaseline, setOriginalBaseline] = useState(parseInt(item.originalPrice.replace("$", "")))
     console.log(prod)
     const removeOne = () => {
-        if (count != 0) {
+        if (count !== 0) {
             setCount((prevCount) => prevCount - 1)
             setPrice((prevPrice) => prevPrice - baselinePrice)
             setOriginalPrice((prevOriginalPrice) => prevOriginalPrice - originalBaseline )
