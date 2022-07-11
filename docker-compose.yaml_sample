@@ -1,0 +1,14 @@
+#rename this file to docker-compose.yaml and place it as sibling of the root app folder to run in a docker container
+
+version: "3.8"
+services:
+  sw_exam:
+    build: ./sw-coding-exam
+    container_name: swcoding_c
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./app/node_modules
+      - ./sw_exam:/app
+    stdin_open: true
+    tty: true

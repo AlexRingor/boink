@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useCallback, useState } from "react";
+import { useEffect, useState } from "react";
 import './styles/Recommended.css'
 import './styles/Notifications.css'
 import SingleNotification from './Notifications/SingleNotification'
@@ -20,7 +20,8 @@ axios.interceptors.request.use(
 export default function Notification() {
     const [notifications, setNotifications] = useState([]);
     const [responseError, setResponseError] = useState('default')
-    const fetchNotifications = useCallback(async () => {
+    
+    const fetchNotifications = (async () => {
     // fetch and set products
     try {
         const result = await axios.get(`${notificationURL}`);
@@ -52,6 +53,7 @@ export default function Notification() {
 
     return (
         <div className="notifications__wrapper">
+            {responseError.message ? '<h1>Unable to fetch data<h1>' : null}
             {notifications.length === 0 ? <h1>No notifications :-p</h1> : null}
             {notifications.map((notif, index) => (
                 <SingleNotification 
