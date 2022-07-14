@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/AlexRingor/sw-coding-exam/static/css/main.9cb4adae.css",
+    "main.js": "/AlexRingor/sw-coding-exam/static/js/main.82b7cd21.js",
+    "static/css/118.80f32a3c.chunk.css": "/AlexRingor/sw-coding-exam/static/css/118.80f32a3c.chunk.css",
+    "static/js/118.7ced06aa.chunk.js": "/AlexRingor/sw-coding-exam/static/js/118.7ced06aa.chunk.js",
+    "static/css/78.8d92e831.chunk.css": "/AlexRingor/sw-coding-exam/static/css/78.8d92e831.chunk.css",
+    "static/js/78.75cdcbe5.chunk.js": "/AlexRingor/sw-coding-exam/static/js/78.75cdcbe5.chunk.js",
+    "static/js/919.7ff175af.chunk.js": "/AlexRingor/sw-coding-exam/static/js/919.7ff175af.chunk.js",
+    "index.html": "/AlexRingor/sw-coding-exam/index.html",
+    "main.9cb4adae.css.map": "/AlexRingor/sw-coding-exam/static/css/main.9cb4adae.css.map",
+    "main.82b7cd21.js.map": "/AlexRingor/sw-coding-exam/static/js/main.82b7cd21.js.map",
+    "118.80f32a3c.chunk.css.map": "/AlexRingor/sw-coding-exam/static/css/118.80f32a3c.chunk.css.map",
+    "118.7ced06aa.chunk.js.map": "/AlexRingor/sw-coding-exam/static/js/118.7ced06aa.chunk.js.map",
+    "78.8d92e831.chunk.css.map": "/AlexRingor/sw-coding-exam/static/css/78.8d92e831.chunk.css.map",
+    "78.75cdcbe5.chunk.js.map": "/AlexRingor/sw-coding-exam/static/js/78.75cdcbe5.chunk.js.map",
+    "919.7ff175af.chunk.js.map": "/AlexRingor/sw-coding-exam/static/js/919.7ff175af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9cb4adae.css",
+    "static/js/main.82b7cd21.js"
+  ]
+}
